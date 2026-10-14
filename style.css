@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #222;
+}
+.blog {
+    padding: 60px 30px;
+}
+.subtitle {
+    text-align: center;
+    color: #b18435;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.blog h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.blog-container {
+    max-width: 1185px;
+    margin: 0 auto;
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+}
+.blog-card {
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.03);
+}
+.image-box {
+    height: 275px;
+    position: relative;
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.date {
+    position: absolute;
+    left: 22px;
+    bottom: 0;
+    width: 64px;
+    height: 85px;
+    background-color: #343840;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.date span {
+    font-size: 27px;
+    margin-bottom: 2px;
+}
+.date small {
+    font-size: 13px;
+}
+.content {
+    padding: 28px 27px 45px;
+}
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #b18a4a;
+}
+.content h2 {
+    font-size: 22px;
+    line-height: 1.45;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+.content p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #777;
+}
+@media (max-width: 900px) {
+    .blog-container {
+        flex-wrap: wrap;
+    }
+    .blog-card {
+        flex: 1 1 45%;
+    }
+
+    .blog h1 {
+        font-size: 36px;
+    }
+}
+@media (max-width: 600px) {
+    .blog {
+        padding: 35px 18px;
+    }
+    .blog-container {
+        flex-direction: column;
+    }
+    .blog-card {
+        width: 100%;
+    }
+    .blog h1 {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+    .image-box {
+        height: 240px;
+    }
+}
